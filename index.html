@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>首頁</title>
+		<link rel="stylesheet" href="css/body.css" type="text/css">
+		<link rel="stylesheet" href="css/nav.css" type="text/css">
+		<link rel="stylesheet" href="css/index.css" type="text/css">
+		<link rel="stylesheet" href="css/user.css" type="text/css">
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="btn">
+				<a href="index.html"><button class="btn">首頁</button></a>
+				<div class="dropdown">
+					<a href="all.html"><button class="btn">商品</button></a>
+					
+				</div>
+				<a href="question.html"><button class="btn" style="margin-left: 90px;">客服中心</button></a>
+				<a href="aboutus.html"><button class="btn">關於我們</button></a>
+			</div>
+			<img src="img/logo.png" class="logo">
+			<div class="icon">
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+				<img src="img/user.png" class="icon">
+				</button>
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<div class="userrow">
+						<div class="usercolumn">
+							<div class="vl">
+								<form class="modal-content animate" action="" style="position:relative; top:20px;">
+									<label class="title"><b>登入</b></label><br>
+									<label for="uname"><b>信箱</b></label>
+									<input type="email" placeholder="Enter Email" class="email login" required><br>
+									<label for="psw"><b>密碼</b></label>
+									<input type="password" placeholder="Enter Password" class="psw login" required><br>
+									<button type="submit" class="logbtn">Login</button>
+								</form>
+							</div>
+						</div>
+						<div class="usercolumn">
+							<form class="modal-content animate" action="">
+								<label class="title" style="left: 130px;"><b>註冊</b></label><br>
+								<label for="uname"><b>姓名</b></label>
+								<input type="text" style="margin-left:43px;" placeholder="Enter Username" class="uname login" required><br>
+								<label for="uname"><b>信箱</b></label>
+								<input type="email" style="margin-left:43px;" placeholder="Enter Email" class="email login" required><br>
+								<label for="psw"><b>密碼</b></label>
+								<input type="password" style="margin-left:43px;" placeholder="Enter Password" class="psw login" required><br>
+								<label for="psw" ><b>確認密碼</b></label>
+								<input type="password" placeholder="reconfirm Password" class="psw login" required><br>
+								<button type="submit" class="logbtn subbtn">Submit</button>
+								<button type="reset" class="rebtn subbtn">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<img src="img/shopping-cart.png" class="icon2">
+			</div>
+		</nav>
+		<div class="slide">
+			<div class="slideshow">
+				<div class="slides fade">
+					<img src="img/advertise.JPG" class="slide-img">
+				</div>
+				<div class="slides fade">
+					<img src="img/product1.JPG" class="slide-img">
+				</div>
+				<div class="slides fade">
+					<img src="img/product2.JPG" class="slide-img">
+				</div>
+				<div class="slides fade">
+					<img src="img/product3.JPG" class="slide-img">
+				</div>
+			</div>
+			<br>
+			<div style="text-align:center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+		<div class="discount">
+			<img class="photo_discount" src="img/discount.png"><span class="discount">shower520</span>
+			<p class="discount">凡輸入折扣碼立即享有100元折價優惠</p>
+		</div>
+		<div class="idea">
+			
+			<div class="text move2">
+				<p class="title">Like U</p>
+				<p class="text">我們將網站取名為「洗歡尼」<br>洗字是因為跟我們所賣的商品有關(盥洗用品)<br>尼字是代表我們的商品是印尼品牌<br>洗歡尼也等於喜歡你的意思<br>讓顧客對我們的商品有深刻的記憶。</p>
+			</div>
+		</div>
+		<div class="caption" style="top:230px;">
+			<p class="caption" style="left:-215px;">-熱銷商品-</p>
+		</div>
+		<div class="row">
+			<div class="ranking move" >
+				<img src="img/hair2.JPG" class="top1 ranking">
+			</div>
+			<div class="ranking move">
+				<img src="img/hair2.JPG" class="top1 ranking">
+			</div>
+			<div class="ranking move">
+				<img src="img/hair2.JPG" class="top1 ranking">
+			</div>
+		</div>
+		<button onclick="uptotop()" id="myBtn" title="Go to top" class="topbtn">Top</button>
+		<footer>
+			<div class="footer">
+				<p class="copyright">Copyright © 2019 xihuanni</p>
+				<div class="visit">
+					<img src="img/visit.png" class="footer-icon">
+					<p class="footer">訪客人數 :</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("slides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 5000); // Change image every 2 seconds
+		}
+
+		function ani(claname,type1){
+            if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).addClass(type1);
+					
+			};
+			$(window).scroll(function(){
+				if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).addClass(type1);
+					
+				};
+			});
+			
+		};
+		ani("move2","texting");
+		ani("move","moving");
+
+
+		window.onscroll = function() {scroller()};
+
+		function scroller() {
+ 			 if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    			document.getElementById("myBtn").style.display = "block";
+  			} 
+  			else {
+   			 document.getElementById("myBtn").style.display = "none";
+ 			 }
+		}
+
+		function uptotop() {
+  			document.body.scrollTop = 0;
+  			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</html>

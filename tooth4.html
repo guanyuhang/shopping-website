@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品</title>
+		<link rel="stylesheet" href="css/body.css" type="text/css">
+		<link rel="stylesheet" href="css/nav.css" type="text/css">
+		<link rel="stylesheet" href="css/product.css" type="text/css">
+		<link rel="stylesheet" href="css/user.css" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+		window.onload = function() {
+			var num = document.getElementById("num");
+			var inc = document.getElementById("increase");
+			var dec = document.getElementById("decrease");
+			inc.onclick = function() {
+				if(num.value<=9){
+				num.value = parseInt(num.value) + 1;
+				}
+				else{
+				num.value = parseInt(num.value);
+				}
+				};
+			dec.onclick = function() {
+				if(num.value>1){
+				num.value = parseInt(num.value) - 1;
+				}
+				else{
+				num.value = parseInt(num.value);
+				}
+			};
+		};
+		</script>
+	</head>
+	<body>
+		<nav>
+			<div class="btn">
+				<a href="index.html"><button class="btn">首頁</button></a>
+				<div class="dropdown">
+					<a href="all.html"><button class="btn">商品</button></a>
+					
+				</div>
+				<a href="question.html"><button class="btn" style="margin-left: 90px;">客服中心</button></a>
+				<a href="aboutus.html"><button class="btn">關於我們</button></a>
+			</div>
+			<img src="img/logo.png" class="logo">
+			<div class="icon">
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+				<img src="img/user.png" class="icon">
+				</button>
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<div class="userrow">
+						<div class="usercolumn">
+							<div class="vl">
+								<form class="modal-content animate" action="" style="position:relative; top:20px;">
+									<label class="title"><b>登入</b></label><br>
+									<label for="uname"><b>信箱</b></label>
+									<input type="email" placeholder="Enter Email" class="email login" required><br>
+									<label for="psw"><b>密碼</b></label>
+									<input type="password" placeholder="Enter Password" class="psw login" required><br>
+									<button type="submit" class="logbtn">Login</button>
+								</form>
+							</div>
+						</div>
+						<div class="usercolumn">
+							<form class="modal-content animate" action="">
+								<label class="title" style="left: 130px;"><b>註冊</b></label><br>
+								<label for="uname"><b>姓名</b></label>
+								<input type="text" style="margin-left:43px;" placeholder="Enter Username" class="uname login" required><br>
+								<label for="uname"><b>信箱</b></label>
+								<input type="email" style="margin-left:43px;" placeholder="Enter Email" class="email login" required><br>
+								<label for="psw"><b>密碼</b></label>
+								<input type="password" style="margin-left:43px;" placeholder="Enter Password" class="psw login" required><br>
+								<label for="psw" ><b>確認密碼</b></label>
+								<input type="password" placeholder="reconfirm Password" class="psw login" required><br>
+								<button type="submit" class="logbtn subbtn">Submit</button>
+								<button type="reset" class="rebtn subbtn">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="shopping-cart1.html"><img src="img/shopping-cart.png" class="icon2"></a>
+			</div>
+		</nav>
+		<div class="product">
+			<div class="product_img">
+				<div class="mySlides">
+					<img src="img/tooth4.jpg" class="product">
+				</div>
+				<div class="mySlides">
+					<img src="img/tooth_all1.jpg" class="product">
+				</div>
+				<div class="mySlides">
+					<img src="img/tooth_all2.jpg" class="product">
+				</div>
+				
+				<div class="mySlides">
+					<img src="img/tooth_all3.jpg" class="product">
+				</div>
+				
+				<a class="last" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				<div class="row">
+					<div class="column">
+						<img class="demo cursor" src="img/tooth4.jpg" style="width:100%" onclick="currentSlide(1)">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/tooth_all1.jpg" style="width:100%" onclick="currentSlide(2)">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/tooth_all2.jpg" style="width:100%" onclick="currentSlide(3)">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/tooth_all3.jpg" style="width:100%" onclick="currentSlide(4)">
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<h1>全方位呵護草本牙膏100g</h1>
+				<h3>富含十多種珍貴藥草<br>不含三氯沙，百分百素食可用</h3>
+				<hr class="text">
+				<div class="type">
+					<ul>
+						<button class="type" style="margin-left: -45px;"><li>舒敏</li></button>
+						<button class="type"><li>清新舒活</li></button>
+						<button class="type"><li>亮白</li></button>
+						<button class="type"><li>全方位呵護</li></button>
+					</ul>
+				</div>
+				<p class="text">庫存數量 : </p>
+				<div class="amount">
+					<input id="decrease" type="button" value="-">
+					<input id="num" type="text" value="1" size="1" style="text-align:center;" min="1" max="10">
+					<input id="increase" type="button" value="+">
+				</div>
+				<h1 class="money">NT 200</h1>
+				<input type="submit" name="addcart" value="加入購物車" class="addcart">
+			</div>
+		</div>
+		
+		<div class="cmt">
+			<p class="comment">商品評論</p>
+			<div class="comment">
+				<label class="comment-title">暱稱:</label><input type="text" class="comment-title" required><br>
+				<label class="comment-title">商品名稱:</label><input type="text" class="comment-title" style="margin-left:2%;" required><br>
+				<label class="comment-title">評分:</label>
+				<div class="star">
+					<input type="radio" id="star5" name="rating5" value="5" hidden/>
+					<label for="star5"></label>
+					<input type="radio" id="star4" name="rating4" value="4" hidden/>
+					<label for="star4"></label>
+					<input type="radio" id="star3" name="rating3" value="3" hidden/>
+					<label for="star3"></label>
+					<input type="radio" id="star2" name="rating2" value="2" hidden/>
+					<label for="star2"></label>
+					<input type="radio" id="star1" name="rating1" value="1" hidden/>
+					<label for="star1"></label>
+				</div>
+				<label class="comment-title">評論內容:</label><br><textarea rows="5" class="content" ></textarea>
+			</div>
+			<p class="comment">評論</p>
+			<div class="comment-board">
+
+				<div class='cmt-board'><label class=comment-title>暱稱: </label><br>
+				<label class=comment-title>商品名稱: </label><br>
+				<label class=comment-title>評分(滿分五星): </label><br>
+				<label class=comment-title>評論: </label><br>
+				<label class=comment-title>日期: </label>
+			</div>			
+				</div>
+	</body>
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	function plusSlides(n)
+	{
+		showSlides(slideIndex += n);
+	}
+	function currentSlide(n)
+	{
+		showSlides(slideIndex = n);
+	}
+	function showSlides(n)
+	{
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		if (n > slides.length)
+		{
+			slideIndex = 1
+		}
+		if (n < 1)
+		{
+			slideIndex = slides.length
+		}
+		for (i = 0; i < slides.length; i++)
+		{
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++)
+		{
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	}
+	</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>客服中心</title>
+		<link rel="stylesheet" href="css/body.css" type="text/css">
+		<link rel="stylesheet" href="css/nav.css" type="text/css">
+		<link rel="stylesheet" href="css/question.css" type="text/css">
+		<link rel="stylesheet" href="css/user.css" type="text/css">
+	</head>
+	<body>
+		<nav>
+			<div class="btn">
+				<a href="index.html"><button class="btn">首頁</button></a>
+				<div class="dropdown">
+					<a href="all.html"><button class="btn">商品</button></a>
+					
+				</div>
+				<a href="question.html"><button class="btn" style="margin-left: 90px;">客服中心</button></a>
+				<a href="aboutus.html"><button class="btn">關於我們</button></a>
+			</div>
+			<img src="img/logo.png" class="logo">
+			<div class="icon">
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+				<img src="img/user.png" class="icon">
+				</button>
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<div class="userrow">
+						<div class="usercolumn">
+							<div class="vl">
+								<form class="modal-content animate" action="" style="position:relative; top:20px;">
+									<label class="title"><b>登入</b></label><br>
+									<label for="uname"><b>信箱</b></label>
+									<input type="email" placeholder="Enter Email" class="email login" required><br>
+									<label for="psw"><b>密碼</b></label>
+									<input type="password" placeholder="Enter Password" class="psw login" required><br>
+									<button type="submit" class="logbtn">Login</button>
+								</form>
+							</div>
+						</div>
+						<div class="usercolumn">
+							<form class="modal-content animate" action="">
+								<label class="title" style="left: 130px;"><b>註冊</b></label><br>
+								<label for="uname"><b>姓名</b></label>
+								<input type="text" style="margin-left:43px;" placeholder="Enter Username" class="uname login" required><br>
+								<label for="uname"><b>信箱</b></label>
+								<input type="email" style="margin-left:43px;" placeholder="Enter Email" class="email login" required><br>
+								<label for="psw"><b>密碼</b></label>
+								<input type="password" style="margin-left:43px;" placeholder="Enter Password" class="psw login" required><br>
+								<label for="psw" ><b>確認密碼</b></label>
+								<input type="password" placeholder="reconfirm Password" class="psw login" required><br>
+								<button type="submit" class="logbtn subbtn">Submit</button>
+								<button type="reset" class="rebtn subbtn">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="shopping-cart1.html"><img src="img/shopping-cart.png" class="icon2"></a>
+			</div>
+		</nav>
+		<img class="question_photo" src="img/question.png"/><h1>問題提問</h1>
+		<div class="question">
+			<form action="">
+				<label for="name">姓名</label>
+				<input type="text" id="qname" name="qname" placeholder="Your name.." class="question" required>
+				<label for="email">信箱</label>
+				<input type="email" id="qmail" name="qmail" placeholder="Your email.." required>
+				<label for="subject">問題</label>
+				<select id="subject" name="subject">
+					<option>商品問題</option>
+					<option>訂單問題</option>
+					<option>出貨問題</option>
+				</select>
+				<label for="content">內容</label>
+				<textarea id="content" name="content" placeholder="Write something.." style="height:150px" required>
+				</textarea>
+				<button type="submit"  class="question">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>

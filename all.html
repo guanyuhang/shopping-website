@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品</title>
+		<link rel="stylesheet" href="css/body.css" type="text/css">
+		<link rel="stylesheet" href="css/nav2.css" type="text/css">
+		<link rel="stylesheet" href="css/all.css" type="text/css">
+		<link rel="stylesheet" href="css/user.css" type="text/css">
+	</head>
+	<body>
+		<nav>
+			<div class="btn">
+				<a href="index.html"><button class="btn">首頁</button></a>
+				<div class="dropdown">
+					<a href="all.html"><button class="btn active" >商品</button></a>
+					<div class="dropdown-content">
+						<button class="btn2" onclick="productType('hair')" >頭部</button>
+						<button class="btn2" onclick="productType('body-all')" >身體</button>
+						<button class="btn2" onclick="productType('face')" >臉部</button>
+					</div>
+				</div>
+				<a href="question.html"><button class="btn" style="margin-left: 90px;">客服中心</button></a>
+				<a href="aboutus.html"><button class="btn">關於我們</button></a>
+			</div>
+			<img src="img/logo.png" class="logo">
+			<div class="icon">
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+				<img src="img/user.png" class="icon">
+				</button>
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<div class="userrow">
+						<div class="usercolumn">
+							<div class="vl">
+								<form class="modal-content animate" action="" style="position:relative; top:20px;">
+									<label class="title"><b>登入</b></label><br>
+									<label for="uname"><b>信箱</b></label>
+									<input type="email" placeholder="Enter Email" class="email login" required><br>
+									<label for="psw"><b>密碼</b></label>
+									<input type="password" placeholder="Enter Password" class="psw login" required><br>
+									<button type="submit" class="logbtn">Login</button>
+								</form>
+							</div>
+						</div>
+						<div class="usercolumn">
+							<form class="modal-content animate" action="">
+								<label class="title" style="left: 130px;"><b>註冊</b></label><br>
+								<label for="uname"><b>姓名</b></label>
+								<input type="text" style="margin-left:43px;" placeholder="Enter Username" class="uname login" required><br>
+								<label for="uname"><b>信箱</b></label>
+								<input type="email" style="margin-left:43px;" placeholder="Enter Email" class="email login" required><br>
+								<label for="psw"><b>密碼</b></label>
+								<input type="password" style="margin-left:43px;" placeholder="Enter Password" class="psw login" required><br>
+								<label for="psw" ><b>確認密碼</b></label>
+								<input type="password" placeholder="reconfirm Password" class="psw login" required><br>
+								<button type="submit" class="logbtn subbtn">Submit</button>
+								<button type="reset" class="rebtn subbtn">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="shopping-cart1.html"><img src="img/shopping-cart.png" class="icon2"></a>
+				<form class="search">
+					<input type="text" name="search" placeholder="Search.." class="search">
+				</form>
+			</div>
+		</nav>
+		<div class="row">
+			
+			<div class="column hair">
+				<a href="hair1.html">
+					<div class="font">
+						<img src="img/hair1.jpg" style="width:100%">
+						<h2>葵花柔亮洗髮乳400ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/hairstyle.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 240</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="column hair">
+				<a href="hair2.html">
+					<div class="font">
+						<img src="img/hair2.jpg" style="width:100%">
+						<h2>黑訶子護色洗髮乳400ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/hairstyle.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 240</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column hair">
+				<a href="hair3.html">
+					<div class="font">
+						<img src="img/hair3.jpg" style="width:100%">
+						<h2>茉莉修護洗髮乳400ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/hairstyle.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 240</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="column hair">
+				<a href="hair4.html">
+					<div class="font">
+						<img src="img/hair4.jpg" style="width:100%">
+						<h2>茶樹豐盈洗髮乳400ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/hairstyle.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 240</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column body-all">
+				<a href="body1.html">
+					<div class="font">
+						<img src="img/body1.jpg" style="width:100%">
+						<h2>滋潤乳霜蜂蜜沐浴乳400ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/shampoo.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 250</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column body-all">
+				<a href="body2.html">
+					<div class="font">
+						<img src="img/body2.jpg" style="width:100%">
+						<h2>苦楝薑黃護膚沐浴乳400ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/shampoo.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 250</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column body-all">
+				<a href="soap1.html">
+					<div class="font">
+						<img src="img/soap1.jpg" style="width:100%">
+						<h2>清爽小黃瓜舒活皂75gm</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/soap.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 70</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column body-all">
+				<a href="soap2.html">
+					<div class="font">
+						<img src="img/soap2.jpg" style="width:100%">
+						<h2>苦楝薑黃護膚皂75gm</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/soap.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 70</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column body-all">
+				<a href="soap3.html">
+					<div class="font">
+						<img src="img/soap3.jpg" style="width:100%">
+						<h2>乳霜蜂蜜潤膚皂75gm</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/soap.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 70</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column face">
+				<a href="face.html">
+					<div class="font">
+						<img src="img/face.jpg" style="width:100%">
+						<h2>苦楝泡沫潔面慕斯150ml</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/wash.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 380</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column face">
+				<a href="tooth1.html">
+					<div class="font">
+						<img src="img/tooth1.jpg" style="width:100%">
+						<h2>舒敏草本牙膏100g</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/tooth.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 200</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column face">
+				<a href="tooth2.html">
+					<div class="font">
+						<img src="img/tooth2.jpg" style="width:100%">
+						<h2>清新舒活草本牙膏100g</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/tooth.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 200</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column face">
+				<a href="tooth3.html">
+					<div class="font">
+						<img src="img/tooth3.jpg" style="width:100%">
+						<h2>全方位亮白草本牙膏100g</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/tooth.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 200</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column face">
+				<a href="tooth4.html">
+					<div class="font">
+						<img src="img/tooth4.jpg" style="width:100%">
+						<h2>全方位呵護草本牙膏100g</h2>
+					</div>
+					<div class="back">
+						<div class="type-icon">
+							<img src="img/tooth.png">
+							<p style="font-size: 20px;">庫存數量:</p>
+							<h1>NT 200</h1>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script>
+		productType("all")
+		function productType(c) {
+			var x, i;
+			x = document.getElementsByClassName("column");
+			if (c == "all") c = "";
+			for (i = 0; i < x.length; i++) {
+				removeProduct(x[i], "show");
+				if (x[i].className.indexOf(c) > -1)
+					addProduct(x[i], "show");
+			}
+		}
+		function addProduct(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {
+					element.className += " " + arr2[i];
+				}
+			}
+		}
+		function removeProduct(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+		</script>
+	</body>
+</html>

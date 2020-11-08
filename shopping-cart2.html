@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>購物車</title>
+		<link rel="stylesheet" href="css/body.css" type="text/css">
+		<link rel="stylesheet" href="css/nav.css" type="text/css">
+		<link rel="stylesheet" href="css/user.css" type="text/css">
+		<link rel="stylesheet" href="css/shopping-cart1.css" type="text/css">
+		<link rel="stylesheet" href="css/shopping-cart2.css" type="text/css">
+	</head>
+	<body>
+		<nav>
+			<div class="btn">
+				<a href="index.html"><button class="btn">首頁</button>
+				<div class="dropdown">
+					<a href="all.html"><button class="btn">商品</button></a>
+					
+				</div>
+				<a href="question.html"><button class="btn" style="margin-left: 90px;">客服中心</button></a>
+				<a href="aboutus.html"><button class="btn">關於我們</button></a>
+			</div>
+			<img src="img/logo.png" class="logo">
+			<div class="icon">
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+				<img src="img/user.png" class="icon">
+				</button>
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<div class="userrow">
+						<div class="usercolumn">
+							<div class="vl">
+								<form class="modal-content animate" action="" style="position:relative; top:20px;">
+									<label class="title"><b>登入</b></label><br>
+									<label for="uname"><b>信箱</b></label>
+									<input type="email" placeholder="Enter Email" class="email login" required><br>
+									<label for="psw"><b>密碼</b></label>
+									<input type="password" placeholder="Enter Password" class="psw login" required><br>
+									<button type="submit" class="logbtn">Login</button>
+								</form>
+							</div>
+						</div>
+						<div class="usercolumn">
+							<form class="modal-content animate" action="">
+								<label class="title" style="left: 130px;"><b>註冊</b></label><br>
+								<label for="uname"><b>姓名</b></label>
+								<input type="text" style="margin-left:43px;" placeholder="Enter Username" class="uname login" required><br>
+								<label for="uname"><b>信箱</b></label>
+								<input type="email" style="margin-left:43px;" placeholder="Enter Email" class="email login" required><br>
+								<label for="psw"><b>密碼</b></label>
+								<input type="password" style="margin-left:43px;" placeholder="Enter Password" class="psw login" required><br>
+								<label for="psw" ><b>確認密碼</b></label>
+								<input type="password" placeholder="reconfirm Password" class="psw login" required><br>
+								<button type="submit" class="logbtn subbtn">Submit</button>
+								<button type="reset" class="rebtn subbtn">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="shopping-cart1.html"><img src="img/shopping-cart.png" class="icon2"></a>
+			</div>
+		</nav>
+		<table class="shopping">
+			<tr class="shopping">
+				<td class="shopping">選擇結帳</td>
+				<td class="shopping" style="border: 2px solid #003b73; border-radius: 10px;">填寫資料</td>
+				<td class="shopping">訂購成功</td>
+			</tr>
+		</table>
+		<div class="information">
+			<h2>填寫資料</h2>
+			<p>	為了確保交易成功，以及讓商品迅速無誤地寄到您手中，請您仔細填妥訂購資料</p>
+			<form action="/action_page.php">
+				<div class="informationrow">
+					<div class="informationcol">
+						<h3>個人資料</h3>
+						<label for="fname">收件人姓名</label>
+						<input type="text"  name="firstname" class="informations">
+						<label for="email"> Email</label>
+						<input type="text"  name="email" class="informations">
+						<label for="adr">收件人電話</label>
+						<input type="text"  name="address" class="informations">
+					</div>
+					<div class="informationcol">
+						<h3>寄貨資訊</h3>
+						<label for="ccnum">運送方式</label>
+						<select size="1">
+							<option>超商取貨</option>
+							<option>宅配到府</option>
+						</select>
+						<label for="ccnum">所在城市</label>
+						<input type="text"  name="cardnumber" class="informations">
+						<label for="cname">收件地址</label>
+						<input type="text"  name="cardname" class="informations">
+					</div>
+					
+					
+					
+					<a class="page-link" href="shopping-cart1.html"><input type="button" value="回上一步" class="nextbtn"></a>
+					<a class="page-link" href="shopping-cart3.html"><input type="button" value="確認結帳" class="nextbtn"></a>
+				</form>
+			</div>
+		</body>
+	</html>

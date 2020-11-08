@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>會員中心</title>
+		<link rel="stylesheet" href="css/body.css" type="text/css">
+		<link rel="stylesheet" href="css/nav.css" type="text/css">
+		<link rel="stylesheet" href="css/user.css" type="text/css">
+		<link rel="stylesheet" href="css/center.css" type="text/css">
+		
+	</head>
+	<body>
+		<nav>
+			<div class="btn">
+				<a href="index.html"><button class="btn">首頁</button></a>
+				<div class="dropdown">
+					<a href="all.html"><button class="btn">商品</button></a>
+				</div>
+				<a href="question.html"><button class="btn" style="margin-left: 90px;">客服中心</button></a>
+				<a href="aboutus.html"><button class="btn">關於我們</button></a>
+			</div>
+			<img src="img/logo.png" class="logo">
+			<div class="icon">
+				<button onclick="document.getElementById('id01').style.display='block'" class="user">
+				<img src="img/user.png" class="icon">
+				</button>
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					<div class="userrow">
+						<div class="usercolumn">
+							<div class="vl">
+								<form class="modal-content animate" action="" style="position:relative; top:20px;">
+									<label class="title"><b>登入</b></label><br>
+									<label for="uname"><b>信箱</b></label>
+									<input type="email" placeholder="Enter Email" class="email login" required><br>
+									<label for="psw"><b>密碼</b></label>
+									<input type="password" placeholder="Enter Password" class="psw login" required><br>
+									<button type="submit" class="logbtn">Login</button>
+								</form>
+							</div>
+						</div>
+						<div class="usercolumn">
+							<form class="modal-content animate" action="">
+								<label class="title" style="left: 130px;"><b>註冊</b></label><br>
+								<label for="uname"><b>姓名</b></label>
+								<input type="text" style="margin-left:43px;" placeholder="Enter Username" class="uname login" required><br>
+								<label for="uname"><b>信箱</b></label>
+								<input type="email" style="margin-left:43px;" placeholder="Enter Email" class="email login" required><br>
+								<label for="psw"><b>密碼</b></label>
+								<input type="password" style="margin-left:43px;" placeholder="Enter Password" class="psw login" required><br>
+								<label for="psw" ><b>確認密碼</b></label>
+								<input type="password" placeholder="reconfirm Password" class="psw login" required><br>
+								<button type="submit" class="logbtn subbtn">Submit</button>
+								<button type="reset" class="rebtn subbtn">Reset</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="shopping-cart1.html"><img src="img/shopping-cart.png" class="icon2"></a>
+			</div>
+		</nav>
+		<img class="center_photo" src="img/center.png"/><h1 class="center">會員中心</h1>
+		<div class="centerrow">
+			<div class="centercolumn1">
+				<div class="cl">
+					<form  action="">
+						<label class="center"><b>會員資料</b></label><br>
+						<label ><b>姓名:</b></label><br>
+						<label ><b>信箱:</b></label><br>
+						<label ><b>密碼:</b></label><br>
+					</form>
+				</div>
+			</div>
+			<div class="centercolumn2">
+				<div class="c2">
+					<form  action="">
+						<label class="center"><b>修改資料</b></label><br>
+						<label><b>姓名</b></label>
+						<input type="text" placeholder="Enter Username" class="cname" required><br>
+						<label><b>信箱</b></label>
+						<input type="email" placeholder="Enter Email" class="cemail" required><br>
+						<label><b>新密碼</b></label>
+						<input type="text" style="margin-left:12%;"  placeholder="Enter Password" class="cpsw" required><br>
+						<label ><b>再次確認密碼</b></label>
+						<input type="text" style="margin-left:3%;" placeholder="reconfirm Password" class="cpsw " required><br>
+						<button type="submit" class="centerbtn">確定修改</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="shop_history">
+			<label class="history"><b>訂購紀錄</b></label><br>
+			<table class="history">
+				<tr class="history">
+					<th style="width:30%">商品</th>
+					<th>數量</th>
+					<th>價錢</th>
+				</tr>
+				<tr>
+					<td>Sample text</td>
+					<td>amount</td>
+					<td>price</td>
+				</tr>
+				<tr>
+					<td>Sample text</td>
+					<td>amount</td>
+					<td>price</td>
+				</tr>
+				<tr>
+					<td>Sample text</td>
+					<td>amount</td>
+					<td>price</td>
+				</tr>
+				<tr>
+					<td>Sample text</td>
+					<td>amount</td>
+					<td>price</td>
+				</tr>
+				<tr>
+					<td>Sample text</td>
+					<td>amount</td>
+					<td>price</td>
+				</tr>
+			</table>
+		</div>
+		<div class="comment-board"">
+			<p class="comment"><b>商品評論</b></p>
+			<table class="history">
+				<tr class="history">
+					<th style="width:15%">暱稱</th>
+					<th style="width:15%">商品名稱</th>
+					<th style="width:15%">評分(滿分五星)</th>
+					<th style="width:30%">評論</th>
+					<th style="width:15%">日期</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				</tr>
+			</table>
+		</div>
+	</body>
