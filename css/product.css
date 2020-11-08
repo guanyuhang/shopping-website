@@ -1,0 +1,295 @@
+.product_img{
+	position: relative;
+	top:100px;
+	left:10%;
+	width: 40%;
+	height: auto;
+	float:left;
+}
+img.product {
+  vertical-align: middle;
+  width:100%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.last,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.last:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,.demo:hover {
+  opacity: 1;
+}
+
+div.text{
+	position: relative;
+	top:100px;
+	right:10%;
+	width: 35%;
+	background-color: white;
+	height: 495px;
+	float:right;
+	color: #003B73;
+	font-family: "微軟正黑體"; 
+
+}
+h1{
+	text-align: center;
+}
+h3{
+	position: relative;
+	top:20px;
+	text-align: center;
+}
+hr.text{
+	border-top:2px solid #003B73;
+	position: relative;
+	top:40px;
+	width: 90%;
+}
+ul{
+	position: relative;
+	top:60px;
+	left:40px;
+}
+li{
+	display: inline;
+	text-align: center;
+
+	
+}
+p.text{
+	position: relative;
+	top:80px;
+	font-size:20px;
+	margin: 0 auto;
+	width: 20%;
+}
+.money{
+	position: relative;
+	top:-8px;
+	left:-150px;
+	color:red;
+}
+.amount{
+	position: relative;
+	width: 30%;
+	top:50px;
+	left:180px;
+	margin: 0 auto;
+}
+#num{
+	width:50px;
+	padding:0 5px;
+	vertical-align: top;
+	text-align: center;
+	outline: none;
+
+}
+#num,#decrease,#increase{
+	position: relative;
+	border:1px solid #003B73;
+	height: 30px;
+	user-select:none;
+
+}
+#decrease,#increase{
+	display: inline-block;
+	width: 25px;
+	line-height: 28px;
+	background-color: #BFD7ED;
+	color:#003B73;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+#decrease:active,#increase:active{
+	background-color: #60A3D9;
+}
+#decrease{
+	border-right: none;
+	border-radius: 0px 0 0 0px;
+	left: 4px;
+}
+#increase{
+	border-left: none;
+	border-radius: 0 0px 0px 0;
+	right: 4px;
+}
+.addcart{
+	position: relative;
+	top:15px;
+	left:50px;
+	width: 80%;
+	height: 50px;
+	border: none;
+	background-color:#60A3D9;
+	font-size: 20px; 
+	font-family: "微軟正黑體";
+	text-align: center;
+
+}
+button.type{
+	font-size: 20px;
+	border:2px solid #003B73;
+	border-radius: 16px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	font-family: "微軟正黑體";
+}
+button.type:active{
+	background-color: #003B73;
+	color:white;
+	font-family: "微軟正黑體";
+}
+.cmt{
+	position:absolute;
+	top: 800px;
+	left: 10%;
+	width:80%;
+	background-color: #e2edf7;
+	margin: 0 auto;
+}
+div.comment{
+	padding-top:3%;
+	padding-bottom:3%;
+	padding-left: 30%;
+	padding-right: 10%;
+}
+p.comment{
+	text-align: center;
+	padding: 10px;
+	font-size: 40px;
+	 background-color: #003b73;
+	 color:white;
+	margin: 0 auto;
+}
+label.comment-title{
+	font-size: 24px;
+	line-height: 60px;
+}
+input.comment-title{
+	width:50%;
+  box-sizing: border-box;
+  border: 1px solid #BFD7ED;
+  border-radius: 16px;
+  font-size: 18px;
+  background-color: white;
+  padding: 12px 15px 12px 15px;
+  margin-left: 8%;
+}
+.content{
+	font-size: 20px;
+	width:50%;
+  box-sizing: border-box;
+  border: 1px solid #BFD7ED;
+  border-radius: 16px;
+  background-color: white;
+  padding: 12px 15px 12px 15px;
+  margin-left: 14%;
+}
+hr.comment{
+	border:1px solid #0074B7;
+
+}
+.comment-board{
+	overflow:auto;
+	font-family:"微軟正黑體";
+	
+	
+}
+.cmt-board{
+	background-color:rgba(131, 186, 230,0.6);
+	margin-bottom:5px;
+	padding-left:30px;
+	font-size:18px;
+	font-family:"微軟正黑體";
+    border-radius: 45px;
+    margin: 10px 250px;
+    border: 5px solid #3b7dbb;
+   color:#003b73;
+}
+
+.star {
+        font-size: 0;
+        display: table;
+        margin-left: 25%;
+    }
+
+    .star > label {
+        color: #0074B7;
+      float: right;
+    }
+
+    .star > label:before {
+        padding: 5px;
+        font-size: 30px;
+        line-height: 1em;
+        display: inline-block;
+        content: "★";
+    }
+
+    .star > input:checked ~ label,
+    .star:not(:checked) > label:hover,
+    .star:not(:checked) > label:hover ~ label {
+        color: #F0F000;
+    }
+
+    .star > input:checked ~ label:hover,
+    .star > label:hover ~ input:checked ~ label,
+    .star > input:checked ~ label:hover ~ label {
+        opacity: 0.5;
+    }
