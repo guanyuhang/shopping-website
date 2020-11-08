@@ -1,0 +1,50 @@
+div.success{
+	background-color: white;
+	position: absolute;
+	top:40%;
+	left: 10%;
+	right: 10%;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+}
+table.success {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  margin-left: 10%;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr.title{
+ background-color: #003b73;
+  color: white;
+}
+
+.nextbtn {
+  background-color: #003b73;
+  color: white;
+  padding: 12px;
+  margin: 30px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.nextbtn:hover {
+  background-color: #60A3D9;
+}
+
+tr.history{
+   color: black;
+  border: 1px solid #BFD7ED;
+  background-color:#BFD7ED; 
+}
